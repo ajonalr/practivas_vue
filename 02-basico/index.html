@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pacticas de Vue</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="app" class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <p :class="['p-3', 'text-white', fondo]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit perferendis non ducimus quas iusto itaque est. Magni,
+            eos placeat assumenda illo suscipit mollitia voluptate nam! Numquam
+            sequi ducimus nostrum quis.
+          </p>
+
+          <input type="text" class="form-control" v-model="fondo" />
+
+          <br>
+
+          <div>
+            <p class="p-3 text-white" :class="{'bg-info':color, 'bg-success': !color}">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+              rerum delectus ipsum et ratione veniam incidunt, vero pariatur
+              quisquam ducimus nostrum. Illum nulla, perferendis officiis ea
+              laudantium nam hic deserunt.
+            </p>
+
+            <button @click="color = !color" >Cambiar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
